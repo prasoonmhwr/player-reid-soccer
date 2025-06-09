@@ -2,7 +2,34 @@
 
 ## Objective
 
-Given two clips of some gameplay from differetn camera angles, map the player such that each players retains the consistent ID across both feed
+Given two clips of some gameplay from differetn camera angles, map the player such that each players retains the consistent ID across both feed.
+
+## Project Structure
+
+```graphql
+player-reid-soccer/
+│
+├── data/
+│   └── broadcast.mp4
+│   └── tacticam.mp4
+│
+├── models/
+│   └── best.pt  # downloaded model
+│
+├── src/
+│   ├── detector.py        
+│   ├── tracker.py         
+│   ├── feature_extractor.py  
+│   ├── matcher.py         
+│   └── utils.py           
+│
+├── output/
+│   └── broadcast_annotated.mp4
+│   └── tacticam_annotated.mp4
+│
+├── main.py
+└── README.md
+```
 
 ## Steps to Run this project
 
