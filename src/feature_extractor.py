@@ -26,8 +26,8 @@ def extract_features(video_path, tracks):
     features = {}
     for frame_id, objs in tracks:
         frame = frame_dict.get(frame_id)
-        for pid, x, y in objs:
-            x1, y1, x2, y2 = int(x - 32), int(y - 64), int(x + 32), int(y + 64)
+        for pid, x1, y1, x2, y2 in objs:
+            x1, y1, x2, y2 = map(int, [x1, y1, x2, y2])
             crop = frame[y1:y2, x1:x2]
             if crop.size == 0:
                 continue
