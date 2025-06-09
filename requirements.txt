@@ -1,0 +1,9 @@
+ultralytics
+opencv-python==4.8.0.76
+torch==2.1.0
+torchvision==0.16.0
+norfair==2.2.0
+numpy==1.26.0
+scipy==1.11.3
+Pillow==10.1.0
+
