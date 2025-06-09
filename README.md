@@ -6,14 +6,18 @@ Given two clips of some gameplay from differetn camera angles, map the player su
 
 ## Steps to Run this project
 
-1. Clone this repo
+1. Clone this repo and move into the folder
+```bash
+git clone https://github.com/prasoonmhwr/player-reid-soccer.git
+cd player-reid-soccer
+```
 
-2. Download and store this model in models folder https://drive.google.com/file/d/1cEH_PGve7G6bFp9mhmrQ-7j8gGOvzhB6/view?usp=sharing
+3. Download and store this model in models folder https://drive.google.com/file/d/1cEH_PGve7G6bFp9mhmrQ-7j8gGOvzhB6/view?usp=sharing
 
-3. Create a virtual environment using 
+4. Create a virtual environment using 
 
 ```bash
-python2 -m vevn myEnv
+python3 -m vevn myEnv
 ```
 ```bash
 source myEnv/bin/activate
