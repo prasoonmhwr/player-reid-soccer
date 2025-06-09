@@ -19,9 +19,15 @@ python2 -m vevn myEnv
 source myEnv/bin/activate
 ```
 
-4. Run ```bash pip install -r requirements.txt```
+4. Install the dependencies
 
-5. Run ```bash
-python main.py --broadcast data/broadcast.mp4 --tacticam data/tacticam.mp4 --model models/best.pt ```
+```bash 
+pip install -r requirements.txt
+```
+
+5. Start the process
+```bash
+python main.py --broadcast data/broadcast.mp4 --tacticam data/tacticam.mp4 --model models/best.pt
+```
 
 The annotated videos will be in output folder
